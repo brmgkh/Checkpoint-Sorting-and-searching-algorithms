@@ -1,0 +1,23 @@
+ALGORITHM Insertion sort
+VAR
+t : ARRAY_OF INTEGER[n];
+i : INTEGER
+j : INTEGER
+k : INTEGER
+    
+BEGIN
+   
+j:=2
+tant que (j<=n) DO  
+  i:=j-1
+  k:=t[j]
+  tant que (i>0) and (t[i]>k) DO   
+    t[i+1]:=t[i]
+    i:=i-1
+  END_WHILE
+  t[i+1]:=k
+  j:=j+1
+END_WHILE
+
+
+END
